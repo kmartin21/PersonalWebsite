@@ -272,48 +272,54 @@ hr.medium {
 }
 
 .ch-img-1 { 
-  background-image: url(../img/oswego.jpg);
+  background-image: url(../img/alkemy.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-2 { 
-  background-image: url(../img/radio-station.png);
+  background-image: url(../img/oswego.jpg);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-3 { 
-  background-image: url(../img/to-do-list.png);
+  background-image: url(../img/radio-station.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-4 { 
-  background-image: url(../img/smart-home.png);
+  background-image: url(../img/to-do-list.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-5 { 
-  background-image: url(../img/debug-console.png);
+  background-image: url(../img/smart-home.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-6 { 
-  background-image: url(../img/shinecards-logo.png);
+  background-image: url(../img/debug-console.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-7 { 
-  background-image: url(../img/seen-logo.png);
+  background-image: url(../img/shinecards-logo.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-8 { 
+  background-image: url(../img/seen-logo.png);
+  background-size: 340px 340px;
+  background-repeat: no-repeat;
+}
+
+.ch-img-9 { 
   background-image: url(../img/website.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
