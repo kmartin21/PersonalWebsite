@@ -22,58 +22,52 @@
 
 <body>
 
-    <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Keith Martin</h1>
+        <div class="header-info__container">
+            <h1 class="header-info__name">Keith Martin</h1>
             <hr class="medium">
-            <h3>SOFTWARE ENGINEER</h3>
+            <h3 class="header-info__description">SOFTWARE ENGINEER</h3>
             <br>
         </div>
     </header>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section class="portfolio">
         <div class="container">
                 <div class="text-center">
                     <h1>Portfolio</h1>
                     <h3>“The progressive development of man is vitally dependent on invention. It is the most important product of his creative brain.” - Nikola Tesla</h3>
                     <hr class="medium">
                 </div>
-                <ul class="ch-grid">
-                    <li>
-                        <div class="ch-item ch-img-1">
-                            <div class="ch-info">
-                                <h3>Filmbase</h3>
-                                <p>A webapp built with the MERN stack, allowing a user to create a collection of favorite movies, read and write movie reviews and discover new movies. Check out the <a href="http://filmbaseapp.herokuapp.com/">website</a> and <a href="https://github.com/kmartin21/Filmbase">repo</a>!</p>
+                <ul class="portfolio-items">
+                    <li class="portfolio-item">
+                        <div class="portfolio-item__container portfolio-item__img--filmbase">
+                            <div class="portfolio-item__info-container">
+                                <h3 class="info-container__header">Filmbase</h3>
+                                <p class="info-container__description">A web app built with the MERN stack, allowing a user to create a collection of favorite movies, read and write movie reviews and discover new movies. Check out the <a href="http://filmbaseapp.herokuapp.com/" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Filmbase" class="info-container__link">repo</a>!</p>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="ch-item ch-img-2">
-                            <div class="ch-info">
-                                <h3>Discovent</h3>
-                                <p>A webapp built with ReactJS and Redux, allowing a user to find events happening in different countries. Users can also get event info and find out where to buy tickets. Check out the <a href="https://discovent.herokuapp.com/">website</a> and <a href="https://github.com/kmartin21/Discovent">repo</a>!</p>
+                    <li class="portfolio-item">
+                        <div class="portfolio-item__container portfolio-item__img--discovent">
+                            <div class="portfolio-item__info-container">
+                                <h3 class="info-container__header">Discovent</h3>
+                                <p class="info-container__description">A web app built with ReactJS and Redux, allowing a user to find events happening in different countries. Users can also get event info and find out where to buy tickets. Check out the <a href="https://discovent.herokuapp.com/" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Discovent" class="info-container__link">repo</a>!</p>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="ch-item ch-img-3">
-                            <div class="ch-info">
-                                <h3>School assignments</h3>
-                                <p>Most of my csc assignments at SUNY Oswego were done in Java, ranging from courses such as networking, parallel computing and graphical user interfaces. I've also done several projects in SQL as well as smaller projects in Lisp and several other languages. Check out the <a href="https://github.com/kmartin21/CSCAssignments">repo</a>!</p>
+                    <li class="portfolio-item">
+                        <div class="portfolio-item__container portfolio-item__img--comment-box">
+                            <div class="portfolio-item__info-container">
+                                <h3 class="info-container__header">Comment box</h3>
+                                <p class="info-container__description">A web app built with the MERN stack, replicating the facebook comment box. Check out the <a href="https://github.com/kmartin21/CommentBox" class="info-container__link">repo</a>!</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="connect" class="connect bg-primary">
+    <section class="connect bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -102,20 +96,21 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-    <section id="profile" class="profile">
+    <section class="profile">
         <div class="text-center profile">
             <h1>Profile</h1>
             <hr class="medium">
-            <p> I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building. 
+
+            <h3>Experience</h3>
+            <button>Resume</button>
+
+            <h3>About</h3>
+            <!-- <p> I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building. 
             <br>    
             <p></p>
             <p>
@@ -128,11 +123,10 @@
             <p></p>
             <p>
             At the end of the day, my ultimate goal is to impact lives for the better with what I build. 
-            </p>
+            </p> -->
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -152,39 +146,12 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
@@ -210,26 +177,6 @@
             }
         }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
     </script>
 
 </body>
