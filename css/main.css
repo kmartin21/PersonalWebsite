@@ -172,7 +172,7 @@ hr.medium {
     background: linear-gradient(
       rgba(36, 80, 110, 0.7),
       rgba(36, 80, 110, 0.7)
-    ), url(../img/city.jpg) no-repeat center center scroll;
+    ), url(../img/city-bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -272,19 +272,19 @@ hr.medium {
 }
 
 .ch-img-1 { 
-  background-image: url(../img/alkemy.png);
+  background-image: url(../img/filmbase-logo.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-2 { 
-  background-image: url(../img/oswego.jpg);
+  background-image: url(../img/discovent-logo.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
 
 .ch-img-3 { 
-  background-image: url(../img/radio-station.png);
+  background-image: url(../img/oswego-logo.jpg);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
