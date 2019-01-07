@@ -6,7 +6,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Custom Button Styles */
@@ -51,8 +51,9 @@ hr.medium {
 
 /****************** HEADER ********************/
 .header {
-  display: table;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -66,9 +67,7 @@ hr.medium {
 }
 
 .header-info__container {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  flex-basis: 80%;
 }
 
 .header-info__name {
@@ -201,7 +200,7 @@ hr.medium {
   padding: 10px 5px;
   font-style: italic;
   margin: 0 30px;
-  font-size: 12px;
+  font-size: 16px;
   border-top: 1px solid rgba(255,255,255,0.5);
 }
 
@@ -209,7 +208,7 @@ hr.medium {
   color: #fff;
   font-style: italic;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .info-container__link:hover {
@@ -236,6 +235,58 @@ hr.medium {
   vertical-align: middle;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.experience__container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+.experience-info__container {
+  height: 100%;
+  padding-right: 100px;
+}
+
+.resume-btn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 115px;
+  height: 40px;
+  font-weight: bold;
+  background-size: 62px 17px;
+  margin-top: 10px;
+}
+
+.resume-btn:hover {
+  border: none;
+  background-color: rgb(231, 231, 231);
+}
+
+.experience-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-item {
+  display: flex;
+  height: 200px;
+}
+
+.experience-item__img {
+  height: auto;
+  width: auto;
+}
+
+.experience-item-info__container {
+  display: flex;
+  flex-direction: column;
 }
 
 /**********************************************/
