@@ -85,7 +85,7 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <a href="https://github.com/kmartin21" target="_blank"><i class="fa fa-github fa-stack-1x text-primary"></i></a>
+                                <a href="https://github.com/kmartin21" target="_blank"><i class="fa fa-github fa-stack-1x"></i></a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
@@ -116,35 +116,38 @@
                     <div class="experience-item">
                         <img src="img/state-ed-logo.png" class="experience-item__img"/>
                         <div class="experience-item-info__container">
-                            <h4>New York State Education Department</h4>
-                            <h5>Software Engineer</h5>
-                            <h5>Albany, NY</h5>
-                            <p>asdfasdfasdfasdfasdfasdfasdf</p>
+                            <h4 class="experience-item__header">New York State Education Department</h4>
+                            <h5 class="experience-item__header"><strong>Software Engineer</strong></h5>
+                            <h5 class="experience-item__header">Albany, NY</h5>
+                            <span class="experience-item__description">al ksdj fasd fjas dfasjd hgfkajh sdg fjh asg dfj hag sk djfh gak jsh dgfk jha sgd kfj gak sjdh fgka jhsd</span>
                         </div>
                     </div>
                     <div class="experience-item">
                         <img src="img/ibm-logo.png" class="experience-item__img"/>
                         <div class="experience-item-info__container">
-                            <h4>IBM</h4>
-                            <h5>Associate Software Engineer</h5>
-                            <h5>Albany, NY</h5>
-                            <p>asdfasdfasdfasdfasdf</p>
+                            <h4 class="experience-item__header">IBM</h4>
+                            <h5 class="experience-item__header"><strong>Associate Software Engineer</strong></h5>
+                            <h5 class="experience-item__header">Albany, NY</h5>
+                            <span class="experience-item__description">alksdjfasdfjas dfasjdhgfkajhsdg fjhasgdfjhag skdjfhgakjshdgfkjha sgdkfjgak sjdhfgka jhsd</span>
                         </div>
                     </div>
                     <div class="experience-item">
                         <img src="img/pubnub-logo.png" class="experience-item__img"/>
                         <div class="experience-item-info__container">
-                            <h4>PubNub</h4>
-                            <h5>Software Engineering Intern</h5>
-                            <h5>San Francisco, CA</h5>
-                            <p>asdfasdfasdfasdfasdf</p>
+                            <h4 class="experience-item__header">PubNub</h4>
+                            <h5 class="experience-item__header"><strong>Software Engineering Intern</strong></h5>
+                            <h5 class="experience-item__header">San Francisco, CA</h5>
+                            <span class="experience-item__description">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</span>
                         </div>
                     </div>
                 </div> 
             </div>
             
 
-            <h3>About</h3>
+            <div class="about__container">
+                <h3 class="about__header">About</h3>       
+                <span class="about__description">I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building.</span>
+            </div>
             <!-- <p> I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building. 
             <br>    
             <p></p>
@@ -170,8 +173,7 @@
                     <p>Albany, NY, USA</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (518) 369-5453</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kmartin82195@gmail.com">kmartin82195@gmail.com</a>
-                        </li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kmartin82195@gmail.com">kmartin82195@gmail.com</a></li>
                     </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; Keith Martin <script>document.write(new Date().getFullYear())</script></p>
@@ -187,13 +189,11 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function() {
         if ($(this).scrollTop() > 250) {
             if (!fixed) {
                 fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
                 $('#to-top').show("slow", function() {
                     $('#to-top').css({
                         position: 'fixed',

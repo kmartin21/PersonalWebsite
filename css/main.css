@@ -200,7 +200,7 @@ hr.medium {
   padding: 10px 5px;
   font-style: italic;
   margin: 0 30px;
-  font-size: 16px;
+  font-size: 15px;
   border-top: 1px solid rgba(255,255,255,0.5);
 }
 
@@ -270,23 +270,58 @@ hr.medium {
 }
 
 .experience-items {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
 }
 
 .experience-item {
-  display: flex;
-  height: 200px;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .experience-item__img {
-  height: auto;
-  width: auto;
+  height: 100px;
+  width: 100px;
+  display: block;
+  float: none;
 }
 
 .experience-item-info__container {
+  text-align: left;
+  margin-left: 0;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.experience-item__header {
+  margin: 0 0 5px 0;
+  padding: 0;
+  display: block;
+}
+
+.experience-item__description {
+  text-align: left;
+  float: left;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.about__container {
   display: flex;
-  flex-direction: column;
+  width: 70%;
+  margin: 20px auto auto auto;
+}
+
+.about__header {
+  display: inline-block;
+}
+
+.about__description {
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 150px;
+  text-align: left;
 }
 
 /**********************************************/
@@ -301,6 +336,62 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+/**********************************************/
+
+/****************** MEDIA QUERIES ********************/
+@media only screen and (min-width: 1200px) {
+  .experience-item__img {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .experience-item-info__container {
+    display: inline-block;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .experience-info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .experience-info__container h3 {
+    padding-left: 100px;
+  }
+
+  .experience-info__container button {
+    position: relative;
+    left: 100px;
+  }
+
+  .experience-item__img {
+    margin-left: 50px;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__description {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /**********************************************/
