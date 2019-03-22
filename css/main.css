@@ -150,6 +150,12 @@ hr.medium {
   display: inline-block;
 }
 
+.portfolio-item__img--good-news { 
+  background-image: url(../img/good-news-logo.png);
+  background-size: 340px 340px;
+  background-repeat: no-repeat;
+}
+
 .portfolio-item__img--filmbase { 
   background-image: url(../img/filmbase-logo.png);
   background-size: 340px 340px;
@@ -158,12 +164,6 @@ hr.medium {
 
 .portfolio-item__img--discovent { 
   background-image: url(../img/discovent-logo.png);
-  background-size: 340px 340px;
-  background-repeat: no-repeat;
-}
-
-.portfolio-item__img--comment-box { 
-  background-image: url(../img/comment-box-logo.png);
   background-size: 340px 340px;
   background-repeat: no-repeat;
 }
@@ -229,23 +229,13 @@ hr.medium {
 /**********************************************/
 
 /****************** PROFILE ********************/
-.profile p {
-  text-align: left;
-  line-height: 25px;
-  vertical-align: middle;
-  padding-left: 200px;
-  padding-right: 200px;
+.profile__header {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.experience__container {
-  display: flex;
-  width: 70%;
-  margin: auto;
-}
-
-.experience-info__container {
-  height: 100%;
-  padding-right: 100px;
+.profile__row {
+  margin-top: 40px;
 }
 
 .resume-btn {
@@ -269,60 +259,18 @@ hr.medium {
   background-color: rgb(231, 231, 231);
 }
 
-.experience-items {
-  display: inline-block;
-}
-
-.experience-item {
-  display: block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
 .experience-item__img {
-  height: 100px;
-  width: 100px;
-  display: block;
-  float: none;
-}
-
-.experience-item-info__container {
-  text-align: left;
-  margin-left: 0;
-  margin-top: 10px;
-  display: block;
-  width: 200px;
-  height: 200px;
-}
-
-.experience-item__header {
-  margin: 0 0 5px 0;
-  padding: 0;
+  margin: auto; 
   display: block;
 }
 
 .experience-item__description {
-  text-align: left;
-  float: left;
-  word-wrap: break-word;
-  overflow: hidden;
-}
-
-.about__container {
-  display: flex;
-  width: 70%;
-  margin: 20px auto auto auto;
-}
-
-.about__header {
-  display: inline-block;
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 .about__description {
-  display: inline-block;
-  margin-top: 70px;
-  margin-left: 150px;
-  text-align: left;
+  font-size: 18px;
 }
 
 /**********************************************/
@@ -337,66 +285,6 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
-}
-
-/**********************************************/
-
-/****************** MEDIA QUERIES ********************/
-@media only screen and (min-width: 1200px) {
-  .experience-item__img {
-    height: 200px;
-    width: 200px;
-    display: inline-block;
-  }
-
-  .experience-item-info__container {
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .experience-item-info__container {
-    display: inline-block;
-    width: 400px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .experience__container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .experience-info__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .experience-info__container h3 {
-    padding-left: 100px;
-  }
-
-  .experience-info__container button {
-    position: relative;
-    left: 100px;
-  }
-
-  .experience-item__img {
-    margin-left: 50px;
-  }
-
-  .about__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about__description {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
 }
 
 /**********************************************/

@@ -50,10 +50,18 @@
                 </div>
                 <ul class="portfolio-items">
                     <li class="portfolio-item">
+                        <div class="portfolio-item__container portfolio-item__img--good-news">
+                            <div class="portfolio-item__info-container">
+                                <h3 class="info-container__header">Good News</h3>
+                                <p class="info-container__description">A web app built with the MERN stack, that shows a feed of positive news articles in tech, health and business. Users can sign up with their Google account and save articles to read later. Check out the <a href="https://gnewsapp.herokuapp.com/" target="_blank" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/good-news" target="_blank" class="info-container__link">repo</a>!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="portfolio-item">
                         <div class="portfolio-item__container portfolio-item__img--filmbase">
                             <div class="portfolio-item__info-container">
                                 <h3 class="info-container__header">Filmbase</h3>
-                                <p class="info-container__description">A web app built with the MERN stack, allowing a user to create a collection of favorite movies, read and write movie reviews and discover new movies. Check out the <a href="http://filmbaseapp.herokuapp.com/" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Filmbase" class="info-container__link">repo</a>!</p>
+                                <p class="info-container__description">A web app built with the MERN stack, allowing a user to create a collection of favorite movies, read and write movie reviews and discover new movies. Check out the <a href="http://filmbaseapp.herokuapp.com/" target="_blank" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Filmbase" target="_blank" class="info-container__link">repo</a>!</p>
                             </div>
                         </div>
                     </li>
@@ -61,15 +69,7 @@
                         <div class="portfolio-item__container portfolio-item__img--discovent">
                             <div class="portfolio-item__info-container">
                                 <h3 class="info-container__header">Discovent</h3>
-                                <p class="info-container__description">A web app built with ReactJS and Redux, allowing a user to find events happening in different countries. Users can also get event info and find out where to buy tickets. Check out the <a href="https://discovent.herokuapp.com/" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Discovent" class="info-container__link">repo</a>!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="portfolio-item">
-                        <div class="portfolio-item__container portfolio-item__img--comment-box">
-                            <div class="portfolio-item__info-container">
-                                <h3 class="info-container__header">Comment box</h3>
-                                <p class="info-container__description">A web app built with the MERN stack, replicating the facebook comment box. Check out the <a href="https://github.com/kmartin21/CommentBox" class="info-container__link">repo</a>!</p>
+                                <p class="info-container__description">A web app built with ReactJS and Redux, allowing a user to find events happening in different countries. Users can also get event info and find out where to buy tickets. Check out the <a href="https://discovent.herokuapp.com/" target="_blank" class="info-container__link">website</a> and <a href="https://github.com/kmartin21/Discovent" target="_blank" class="info-container__link">repo</a>!</p>
                             </div>
                         </div>
                     </li>
@@ -112,73 +112,155 @@
     </section>
 
     <section class="profile">
-        <div class="text-center profile">
-            <h1>Profile</h1>
-            <hr class="medium">
-
-            <div class="experience__container">
-                <div class="experience-info__container">
-                    <h3>Experience</h3>
-                    <button type="submit" onclick="window.open('Resume.pdf')" class="resume-btn">Résumé</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 profile__header">
+                    <h1>Profile</h1>
+                    <hr class="medium">
                 </div>
-
-                <div class="experience-items">
-                    <div class="experience-item">
-                        <img src="img/state-ed-logo.png" class="experience-item__img"/>
-                        <div class="experience-item-info__container">
-                            <h4 class="experience-item__header">New York State Education Department</h4>
-                            <h5 class="experience-item__header"><strong>Software Engineer</strong></h5>
-                            <h5 class="experience-item__header">Albany, NY</h5>
-                            <span class="experience-item__description">al ksdj fasd fjas dfasjd hgfkajh sdg fjh asg dfj hag sk djfh gak jsh dgfk jha sgd kfj gak sjdh fgka jhsd</span>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <img src="img/ibm-logo.png" class="experience-item__img"/>
-                        <div class="experience-item-info__container">
-                            <h4 class="experience-item__header">IBM</h4>
-                            <h5 class="experience-item__header"><strong>Associate Software Engineer</strong></h5>
-                            <h5 class="experience-item__header">Albany, NY</h5>
-                            <span class="experience-item__description">alksdjfasdfjas dfasjdhgfkajhsdg fjhasgdfjhag skdjfhgakjshdgfkjha sgdkfjgak sjdhfgka jhsd</span>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <img src="img/pubnub-logo.png" class="experience-item__img"/>
-                        <div class="experience-item-info__container">
-                            <h4 class="experience-item__header">PubNub</h4>
-                            <h5 class="experience-item__header"><strong>Software Engineering Intern</strong></h5>
-                            <h5 class="experience-item__header">San Francisco, CA</h5>
-                            <span class="experience-item__description">This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</span>
-                        </div>
-                    </div>
-                </div> 
             </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 profile__header">
+                    <h3>Experience</h3>
+                    <button class="resume-btn" onclick="window.open('Resume.pdf')">Résumé</button>
+                </div>  
+
+                <div class="col-xs-12 col-sm-2">
+                    <img src="img/state-ed-logo.png" class="img-responsive experience-item__img"/>
+                </div>  
             
+                <div class="col-xs-12 col-sm-8">
+                    <h3><strong>Software Engineer</strong></h3>
+                    <h4><strong>New York State Education Department</strong></h4>
+                    <h4 class="text-muted">Albany, NY</h4>
+                    <h4 class="text-muted">May 2018 - Present</h4>
 
-            <div class="about__container">
-                <h3 class="about__header">About</h3>       
-                <span class="about__description">I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building.</span>
+                    <ul class="experience-item__description">
+                        <li>
+                            Redesigned and refactored a Java application that loads data from excel workbooks
+                            into a database by transforming it into a 
+                            microservice for use in other applications.
+                        </li>
+                        <li>
+                            Decreased data load time of the Java application by 50% through the 
+                            use of the Java concurrent package to submit the rows in concurrent batches.
+                        </li>
+                        <li>
+                            Implemented automated testing in the Java application by utilzing JUnit 
+                            to prevent bugs in future development.
+                        </li>
+                        <li>
+                            Developed the front end page and backend code for a feature in a
+                            web app to allow school district admin to update, create and delete other 
+                            school district admin positions.
+                        </li>
+                        <li>
+                            Converted thousands of lines of legacy code from a legacy app to allow the web 
+                            app to perform the backend logic.
+                        </li>
+                        <li>
+                            Leveraged knowledge in full stack web development, Java Spring, Java concurrent package
+                            and programmed in Java, JavaScript, JQuery, HTML and CSS.
+                        </li>
+                    </ul>
+                </div>  
             </div>
-            <!-- <p> I am a Software Engineer with a passion for iOS development and all things iOS. In the summer of 2016, I worked at a startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>. They are a global data stream network that provide API's for developers to use. I built two small iOS apps and a tvOS app in Swift using their API. I then moved to the client engineering team to work alongside a iOS developer to help build a Cocoapod for a PubNub debug console to allow developers to add to the apps they're building. 
-            <br>    
-            <p></p>
-            <p>
-            I'm currently working on a fashion iOS app alongside my two friends and team members I've been doing outside projects with for a few years now. I hold the role as lead iOS developer in this project. Besides iOS, I've built several small projects in languages such as scala, lisp, python, prolog and I've built many projects in Java. I programmed, large, extensive projects in Java for most of my Computer Science courses, courses like: Parallel Computing, Networking, Graphical User Interfaces and Data Structures and File Processing to name a few. 
-            <br>    
-            <p></p>
-            <p>
-            Besides programming, I love learning about anything tech related, have a passion for the sport of boxing, playing the guitar and will always enjoy a hike to the top of a high peak in the Adirondacks. 
-            <br>    
-            <p></p>
-            <p>
-            At the end of the day, my ultimate goal is to impact lives for the better with what I build. 
-            </p> -->
+
+            <div class="row profile__row">
+                <div class="col-xs-12 col-sm-2 col-sm-offset-2">
+                    <img src="img/ibm-logo.png" class="img-responsive experience-item__img"/>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <h3><strong>Associate Software Engineer</strong></h3>
+                    <h4><strong>IBM</strong></h4>
+                    <h4 class="text-muted">Albany, NY</h4>
+                    <h4 class="text-muted">Dec 2017 - May 2018</h4>
+
+                    <ul class="experience-item__description">
+                        <li>
+                            Worked as a member of the build and deployments team.
+                        </li>
+                        <li>
+                            Developed SQL scripts in SQL developer to execute database updates.
+                        </li>
+                        <li>
+                            Handled database migrations.
+                        </li>
+                        <li>
+                            Utilized Jenkins to build and deploy projects and made any necessary fixes
+                            if the build and deploy process failed at any point.
+                        </li>
+                        <li>
+                            Leveraged knowledge in databases, Jenkins, and programmed in SQL.
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="row profile__row">
+                <div class="col-xs-12 col-sm-2 col-sm-offset-2">
+                    <img src="img/pubnub-logo.png" class="img-responsive experience-item__img"/>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <h3><strong>Software Engineering Intern</strong></h3>
+                    <h4><strong>PubNub</strong></h4>
+                    <h4 class="text-muted">May 2016 - Aug 2016</h4>
+                    <h4 class="text-muted">San Francisco, CA</h4>
+
+                    <ul class="experience-item__description">
+                        <li>
+                            Created a CocoaPod in Swift that adds a PubNub debug console to your app.
+                        </li>
+                        <li>
+                            IOS engineers at PubNub utilized the CocoaPod by including it in the apps they were working on,
+                            increasing effeciency in their work.
+                        </li>
+                        <li>
+                            Developed an iOS app in Swift that allows a user to create a radio station and recieve upvotes
+                            and downvotes from listeners in realtime by utilizing the PubNub iOS Swift SDK.
+                        </li>
+                        <li>
+                            Wrote a <a href="https://www.pubnub.com/blog/2016-07-07-realtime-radio-station-application-using-apple-music-and-itunes-search-apis/" target="_blank">tutorial</a> 
+                            for the radio station app and other iOS apps I built at PubNub to increase awareness of PubNub and its capabilities in the developer community. 
+                        </li>
+                        <li>
+                            Leveraged knowledge in iOS development and programmed in Swift.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row profile__row">
+                <div class="col-xs-12 text-center">
+                    <h3><strong>About</strong></h3>
+                </div>
+            </div>
+            <div class="row profile__row">
+                <div class="col-xs-12">
+                    <span class="about__description">
+                            I am a Software Engineer with industry experience working on Java applications and full stack web applications.
+                            I've worked in a wide range of software engineering fields from iOS developement in the past at a
+                            startup in San Francisco, CA, called <a  href = "https://pubnub.com" target="_blank">PubNub</a>, to full stack web
+                            development at the New York State Education Department. I'm proficient in Java and I'm currently focused on 
+                            building full stack web apps with the MERN stack to become a proficient full stack developer. 
+                            <br>
+                            <br>
+                            I've always loved building and creating things. I'm interested in working at a place where I can build software
+                            that impacts people in some way and betters their lives. I'm currently looking for a role in full stack, front end or back 
+                            end development where I can gain experience from senior developers and further my skills as a software engineer.
+                            <br>
+                            <br>
+                            Besides programming, I love learning about anything tech related, have a passion for the sport of boxing,
+                            love music, enjoy playing the guitar and will always be up for a hike to the top of a high peak in the Adirondacks.
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-10 col-lg-offset-1 text-center about__description">
                     <h4><strong>Keith Martin</strong></h4>
                     <p>Albany, NY, USA</p>
                     <ul class="list-unstyled">
@@ -199,30 +281,31 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-    var fixed = false;
+    var fixed = false
     $(document).scroll(function() {
         if ($(this).scrollTop() > 250) {
             if (!fixed) {
-                fixed = true;
+                fixed = true
                 $('#to-top').show("slow", function() {
                     $('#to-top').css({
                         position: 'fixed',
                         display: 'block'
-                    });
-                });
+                    })
+                })
             }
         } else {
             if (fixed) {
-                fixed = false;
+                fixed = false
                 $('#to-top').hide("slow", function() {
                     $('#to-top').css({
                         display: 'none'
-                    });
-                });
+                    })
+                })
             }
         }
-    });
-    document.addEventListener("touchstart", function(){}, true);
+    })
+
+    document.addEventListener("touchstart", function(){}, true)
     </script>
 
 </body>
