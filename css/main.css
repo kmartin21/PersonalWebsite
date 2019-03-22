@@ -234,7 +234,7 @@ hr.medium {
 }
 
 .experience__row {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .profile__header {
@@ -315,10 +315,8 @@ hr.medium {
 }
 
 .experience-item__description {
-  text-align: left;
-  float: left;
-  word-wrap: break-word;
-  overflow: hidden;
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 .about__container {
@@ -332,10 +330,7 @@ hr.medium {
 }
 
 .about__description {
-  display: inline-block;
-  margin-top: 70px;
-  margin-left: 150px;
-  text-align: left;
+  font-size: 18px;
 }
 
 /**********************************************/
